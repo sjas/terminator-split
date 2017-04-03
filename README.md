@@ -1,5 +1,7 @@
 # terminator-split
-Wrapper script for splitting Terminator terminal emulator
+Wrapper script for splitting Terminator terminal emulator.
+
+Tested with python3, needs python configobj lib.
 
 ```shell
 $ terminator-split --help
