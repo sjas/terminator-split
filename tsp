@@ -1,9 +1,11 @@
 #!/usr/bin/python
 
-"""terminator-split
+"""tsp
 
-Wrapper script for splitting Terminator terminal emulator
+Wrapper script for splitting Terminator terminal emulator based on
 https://github.com/AlekseyChudov/terminator-split
+
+Renamed for easier usage.
 """
 
 import argparse
@@ -36,7 +38,7 @@ class TerminatorSplit(object):
         self._launch_terminator()
 
     def _parse_args(self):
-        usage = """terminator-split [-h] [-d]
+        usage = """tsp [-h] [-d]
                         [-e COMMAND] [-g CONFIG] [-t TERMINATOR]
                         [TERMINATOR_OPTIONS]
                         hostname [hostname ...]
