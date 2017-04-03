@@ -1,11 +1,13 @@
 # terminator-split
-Wrapper script for splitting Terminator terminal emulator.
+Wrapper script for easier opening split Terminator terminals.
 
-Tested with python3, needs python configobj lib.
+- Needs Terminator terminal emulator to work.
+- Tested with python3, needs python configobj lib.
+- Renamed to 'tsp' for easier usage, compared to the original version.
 
 ```shell
-$ terminator-split --help
-usage: terminator-split [-h] [-d]
+$ tsp --help
+usage: tsp [-h] [-d]
                         [-e COMMAND] [-g CONFIG] [-t TERMINATOR]
                         [TERMINATOR_OPTIONS]
                         hostname [hostname ...]
@@ -23,13 +25,13 @@ optional arguments:
 ```
 
 ```shell
-terminator-split -m localhost localhost localhost localhost
+tsp -m localhost localhost localhost localhost
 ```
 
-![](https://github.com/AlekseyChudov/terminator-split/blob/master/images/terminator-split-4.png?raw=true)
+![](https://github.com/sjas/terminator-split/blob/master/images/terminator-split-4.png?raw=true)
 
 ```shell
-terminator-split -m localhost localhost localhost localhost localhost localhost localhost localhost
+tsp -m localhost localhost localhost localhost localhost localhost localhost localhost
 ```
 
-![](https://github.com/AlekseyChudov/terminator-split/blob/master/images/terminator-split-8.png?raw=true)
+![](https://github.com/sjas/terminator-split/blob/master/images/terminator-split-8.png?raw=true)
